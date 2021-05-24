@@ -10,32 +10,38 @@
             transform: scale(1);  /*开始为原始大小*/
         }
         25%{
-            transform: scale(1.1); /*放大1.1倍*/
+            transform: scale(1.15); /*放大1.1倍*/
         }
         50%{
             transform: scale(1);
         }
         75%{
-            transform: scale(1.1);
+            transform: scale(1.15);
         }
     }
     .ballon{
-        width: 220px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         /*width: 50%;*/
         /*height: 200px;*/
         margin: auto;
         background: url("pic1.png");
         /*background-size: 100% 100%;*/
-        background-size: 220px 200px;
+        background-size: 250px 250px;
         -webkit-animation-name: scaleDraw; /*关键帧名称*/
         -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
         -webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
         -webkit-animation-duration: 2s; /*动画所花费的时间*/
     }
     .divst{
+        /*width: 350px;*/
+        /*height: 100%;*/
         width: 350px;
-        height: 250px;
+        height: 180px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
         margin: auto;
     }
 </style>
@@ -67,14 +73,14 @@
 <!--    <div style=" class="ballon"></div>-->
 
     <div style="text-align: center">
-        <h3 style="color:darkgreen" id="dateTime" ></h3>
+        <h3 style="color:darkgreen; font-family:SimHei" id="dateTime" ></h3>
     </div>
 
-    <div style="background:#105a0b; color:#FFF" class="divst">
-        <h2>&nbsp;学&nbsp;&nbsp;工&nbsp;&nbsp;号：1871012</h2>
-        <h2>&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：王二麻子</h2>
-        <h2>&nbsp;验证位置：南湖校区南门</h2>
-        <h2>&nbsp;进出状态：进入</h2>
+    <div style="background:darkgreen; color:#FFF; font-family:SimHei " class="divst">
+        <h3>&nbsp;学&nbsp;工&nbsp;号：1871012</h3>
+        <h3>&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;名：王小鹏</h3>
+        <h3>&nbsp;验证位置：南湖校区南门</h3>
+        <h3>&nbsp;进出状态：进入</h3>
     </div>
 
 </body>
