@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery.params.js"></script>
     <title>东北大学通行验证</title>
 <style>
     /*css部分*/
@@ -39,9 +41,7 @@
         width: 350px;
         height: 180px;
         padding-top: 10px;
-        padding-right: 10px;
         padding-bottom: 10px;
-        padding-left: 10px;
         margin: auto;
     }
 </style>
@@ -65,6 +65,11 @@
         return '时间：'+fmt;
     }
     setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy-MM-dd hh:mm:ss');", 1000);
+
+
+    // var name = document.getElementById('username');
+    document.getElementById("username").value = "2312";
+
 </script>
 
 
@@ -77,10 +82,10 @@
     </div>
 
     <div style="background:darkgreen; color:#FFF; font-family:SimHei " class="divst">
-        <h3>&nbsp;学&nbsp;工&nbsp;号：1871012</h3>
-        <h3>&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;名：王小鹏</h3>
-        <h3>&nbsp;验证位置：南湖校区南门</h3>
-        <h3>&nbsp;进出状态：进入</h3>
+        <h3>&nbsp;&nbsp;学&nbsp;工&nbsp;号：1871012</h3>
+        <h3>&nbsp;&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;名：王小鹏  </h3>
+        <h3>&nbsp;&nbsp;验证位置：南湖校区南门</h3>
+        <h3>&nbsp;&nbsp;进出状态：进入</h3>
     </div>
 
 </body>
